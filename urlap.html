@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+</head>
+<body>
+    <h2>Pizza rendelés</h2>
+    <form>
+        <fieldset>
+            <legend>Személyes adatok</legend>
+            <label for="nev">Név: </label><input type="text" name="nev" id="nev"><br><br>
+            <label for="email">Email: </label><input type="email" name="email" id="email"><br><br>
+            <label for="tel">Telefonszám: </label><input type="tel" name="tel" id="tel"><br><br>
+            <label for="cim">Lakcím: </label><input type="text" name="cim" id="cim"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Rendelés</legend>
+            <label for="">Méret: </label>
+            <input type="radio" name="meret" id="kicsi"><label for="kicsi">25 cm</label>
+            <input type="radio" name="meret" id="kozepes"><label for="kozepes">32 cm</label>
+            <input type="radio" name="meret" id="nagy"><label for="nagy">50 cm</label><br><br>
+            <label for="">Alap: </label>
+            <input type="radio" name="alap" id="paradicsom"><label for="paradicsom">Paradicsomos alap</label>
+            <input type="radio" name="alap" id="tejfol"><label for="tejfol">Tejfölös alap</label><br><br>
+            <label for="">Feltétek:</label><br><br>
+            <input type="checkbox" name="feltet1" id="feltet1"><label for="feltet1">Sonka</label>
+            <input type="checkbox" name="feltet2" id="feltet2"><label for="feltet2">Szalámi</label>
+            <input type="checkbox" name="feltet3" id="feltet3"><label for="feltet3">Kolbász</label>
+            <input type="checkbox" name="feltet4" id="feltet4"><label for="feltet4">Bacon</label><br><br>
+            <input type="checkbox" name="feltet5" id="feltet5"><label for="feltet5">Sajt</label>
+            <input type="checkbox" name="feltet6" id="feltet6"><label for="feltet6">Bacon</label>
+            <input type="checkbox" name="feltet7" id="feltet7"><label for="feltet7">Hagyma</label>
+            <input type="checkbox" name="feltet8" id="feltet8"><label for="feltet8">Kukorica</label><br><br>
+            <label for="uzenet">Megjegyzés:</label><br>
+            <textarea name="text" id="uzenet" cols="30" rows="10"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Küldés</button>
+    </form>
+</body>
+</html>
