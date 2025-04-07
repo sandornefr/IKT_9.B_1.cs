@@ -6,6 +6,12 @@
     <title>Űrlap</title>
 </head>
 <body>
+    <nav>
+        <a href="index.html">FŐOLDAL</a> |
+        <a href="listak.html">LISTÁK</a> |
+        <a href="orarend.html">ÓRAREND</a> |
+        <a href="urlap.html">ŰRLAP</a> |
+    </nav>
     <h2>Pizza rendelés</h2>
     <form>
         <fieldset>
@@ -21,9 +27,13 @@
             <input type="radio" name="meret" id="kicsi"><label for="kicsi">25 cm</label>
             <input type="radio" name="meret" id="kozepes"><label for="kozepes">32 cm</label>
             <input type="radio" name="meret" id="nagy"><label for="nagy">50 cm</label><br><br>
-            <label for="">Alap: </label>
-            <input type="radio" name="alap" id="paradicsom"><label for="paradicsom">Paradicsomos alap</label>
-            <input type="radio" name="alap" id="tejfol"><label for="tejfol">Tejfölös alap</label><br><br>
+            <label for="alap">Alap: </label>
+            <select name="alap" id="alap">
+                <option value="ures"></option>
+                <option value="paradicsom">Paradicsomos</option>
+                <option value="tejfol">Tejfölös</option>
+            </select>
+            <br><br>
             <label for="">Feltétek:</label><br><br>
             <input type="checkbox" name="feltet1" id="feltet1"><label for="feltet1">Sonka</label>
             <input type="checkbox" name="feltet2" id="feltet2"><label for="feltet2">Szalámi</label>
@@ -35,9 +45,10 @@
             <input type="checkbox" name="feltet8" id="feltet8"><label for="feltet8">Kukorica</label><br><br>
             <label for="uzenet">Megjegyzés:</label><br>
             <textarea name="text" id="uzenet" cols="30" rows="10"></textarea>
+            <br>
+            <button type="button" onclick="alert('Rendelését rögzítettük!')">Küldés</button>
+            <input type="reset" value="Törlés">
         </fieldset>
-        <br>
-        <button type="submit">Küldés</button>
     </form>
 </body>
 </html>
